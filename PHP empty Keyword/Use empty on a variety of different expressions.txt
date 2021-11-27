@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+// A variable that does not exist
+if(empty($x)) {
+  echo '$x does not exist<br>';
+}
+
+// An empty integer
+if(empty(0)) {
+  echo '0 is empty<br>';
+}
+
+// An empty float
+if(empty(0.0)) {
+  echo '0.0 is empty<br>';
+}
+
+// An empty string
+if(empty("")) {
+  echo '"" is an empty string<br>';
+}
+
+// null
+if(empty(null)) {
+  echo 'null is empty<br>';
+}
+
+// A value that is not empty
+if(empty('A')) {
+  echo '"A" is empty<br>';
+} else {
+  echo '"A" is not empty<br>';
+}
+?>
+
+</body>
+</html>
+
+
+
+
+
+
+
+$x does not exist
+0 is empty
+0.0 is empty
+"" is an empty string
+null is empty
+"A" is not empty
